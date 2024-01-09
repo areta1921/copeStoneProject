@@ -34,14 +34,17 @@ This is a simple web-based Book Store application developed using Spring MVC. Th
 ## Usage
 Navigate to the home page to view the list of books. Use the provided forms to add, update, or delete books.
 
-
-
 # Screenshots
 
+<img width="1160" alt="Screenshot 2024-01-09 005619" src="https://github.com/areta1921/copeStoneProject/assets/95265657/b6b2aba1-f125-45c8-bd3b-23e78e9586a3">
 
 
-![Screenshot 2024-01-09 005619.png](..%2F..%2F..%2FOneDrive%2FDesktop%2FScreenshot%202024-01-09%20005619.png)
+<img width="1141" alt="Screenshot 2024-01-09 005919" src="https://github.com/areta1921/copeStoneProject/assets/95265657/dde7e67c-45d3-4225-86ce-e2ca4299eedd">
 
-![Screenshot 2024-01-09 005919.png](..%2F..%2F..%2FOneDrive%2FDesktop%2FScreenshot%202024-01-09%20005919.png)
 
-![a.png](..%2F..%2F..%2FOneDrive%2FDesktop%2Fa.png)
+<img width="1039" alt="a" src="https://github.com/areta1921/copeStoneProject/assets/95265657/38312142-cf5c-4805-97c0-2c8cd634cfc7">
+
+
+
+
+
