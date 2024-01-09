@@ -23,7 +23,7 @@
 			<div class="col">
 				<form action="#" th:action="@{/checkout/placeOrder}"
 					th:object="${customer}" method="post">
-					<h4 class="text-center">Billing Details</h4>
+					<h4 class="text-center text-dark">Billing Details</h4>
 
 					<input type="hidden" th:field="*{id}" />
 
@@ -91,7 +91,7 @@
 				</form>
 			</div>
 			<div class="col">
-				<h4 class="text-center">Your order</h4>
+				<h4 class="text-center text-dark">Your order</h4>
 				<div class="row">
 					<div class="col">
 						<h5>Products</h5>
@@ -110,7 +110,7 @@
 						</tr>
 					</div>
 				</div>
-				<div class="row" style="margin-top: 25px;">
+				<div class="row text-dark" style="margin-top: 25px;">
 					<div class="col">
 						<h5>Delivery</h5>
 					</div>
@@ -118,7 +118,7 @@
 						<h5 th:text="|${shippingCosts} $|"></h5>
 					</div>
 				</div>
-				<div class="row" style="margin-top: 25px;">
+				<div class="row text-dark" style="margin-top: 25px;">
 					<div class="col">
 						<h5>In total</h5>
 					</div>
@@ -128,14 +128,14 @@
 				</div>
 				<div class="row" style="margin-top: 25px;">
 					<div class="col">
-						<div class="form-check">
+						<div class="form-check text-dark">
 							<input class="form-check-input" type="radio" name="payment"
 								id="radioOption1" value="card"> <label
 								class="form-check-label" for="card"> Payment by card </label>
 						</div>
 					</div>
 					<div class="col">
-						<div class="form-check">
+						<div class="form-check text-dark">
 							<input class="form-check-input" type="radio" name="payment"
 								id="radioOption2" value="cash" checked> <label
 								class="form-check-label" for="cash"> Cash on delivery </label>

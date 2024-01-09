@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration and Login</title>
+    <script th:src="@{/js/formValidation.js}"></script>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form action="#" th:action="@{/register}" method="post" onsubmit="return validateForm()">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" th:field="*{username}"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" th:field="*{password}"><br>
+    <input type="submit" value="Register">
+</form>
+
+<h2>Login Form</h2>
+<form action="#" th:action="@{/login}" method="post" onsubmit="return validateForm()">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" th:field="*{username}"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" th:field="*{password}"><br>
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>

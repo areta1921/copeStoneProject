@@ -62,7 +62,7 @@
 					</tr>
 					</thead>
 					<tbody>
-					<tr th:each="customerBooks, iStat : ${orderPage.content}">
+					<tr th:each="customerBooks, iStat : ${orderPage.content}" >
 						<td><a href="#"
 							   th:href="@{/orders/{id}(id=${customerBooks?.Customer?.id})}"
 							   th:text="${customerBooks?.Customer?.id}"></a></td>
