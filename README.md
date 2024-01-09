@@ -5,46 +5,43 @@
 - Spring Security
 - Spring Data JPA
 - Thymeleaf
-- H2 database
+- mysql
 - Tests
 
-# Docker
-- Pull docker image
-```
-docker pull crni99/bookstore
-```
-- Run docker and expose port
-```
-docker run -d -p 8080:8080
-```
-- Open a web browser and paste this:
-```
-http://localhost:8080/
-```
+
+# Book Store Application
+
+## Description
+This is a simple web-based Book Store application developed using Spring MVC. The application allows you to perform basic CRUD (Create, Read, Update, Delete) operations on a list of books.
+
+## Features
+- **Create**: Add new books to the store with details such as title, author, ISBN, publisher, and published date.
+- **Read**: View the list of all books in the store. Each book's details can be viewed on a separate page.
+- **Update**: Edit the details of existing books in the store.
+- **Delete**: Remove books from the store.
+
+## Technologies Used
+- **Spring MVC**: Used for handling web requests and building the web application.
+- **Thymeleaf**: Server-side Java template engine for processing and generating HTML, XML, JavaScript, CSS, and text.
+- **Spring Data JPA**: Used for easy data access and manipulation using Java Persistence API.
+- **mysql**: In-memory database used for storing the data.
+
+## Setup and Installation
+1. Clone the repository to your local machine.
+2. Open the project in your IDE (IntelliJ, Eclipse, etc.).
+3. Ensure you have Maven and Java 8 (or higher) installed on your machine.
+
+## Usage
+Navigate to the home page to view the list of books. Use the provided forms to add, update, or delete books.
+
+
 
 # Screenshots
 
-## User part
 
-![Book_user](https://user-images.githubusercontent.com/89692428/174270932-c4837762-9ea7-4223-82d3-ba04995cc48a.jpg)
 
-### Shopping Cart
-![Cart_user](https://user-images.githubusercontent.com/89692428/174271029-832d18a0-e71c-4a2f-afd8-93dd99a76078.jpg)
+![Screenshot 2024-01-09 005619.png](..%2F..%2F..%2FOneDrive%2FDesktop%2FScreenshot%202024-01-09%20005619.png)
 
-### Checkout
-![Checkout_user](https://user-images.githubusercontent.com/89692428/210020052-4cdaf65c-90c3-4853-9c4d-9ec2efeb711a.jpg)
+![Screenshot 2024-01-09 005919.png](..%2F..%2F..%2FOneDrive%2FDesktop%2FScreenshot%202024-01-09%20005919.png)
 
-## Admin part
-### Username and password: ognjen
-### Show all, search, edit and delete.
-
-![Book_admin](https://user-images.githubusercontent.com/89692428/210020095-b82c2ac8-9314-4a60-9676-9ee4a8e68695.jpg)
-
-### Add new book / validation
-![Book admin_add](https://user-images.githubusercontent.com/89692428/174271116-8e05cf80-1124-41ad-ae01-748fa5b9bf7d.jpg)
-
-### Orders
-![Book_orders](https://user-images.githubusercontent.com/89692428/210020151-d4eebb9f-9b83-4fda-9ddd-5c2a60b0c7e2.jpg)
-
-### Order
-![Book_order](https://user-images.githubusercontent.com/89692428/210020157-053e4a38-dc7b-4568-8797-5c5a14bdd04b.jpg)
+![a.png](..%2F..%2F..%2FOneDrive%2FDesktop%2Fa.png)

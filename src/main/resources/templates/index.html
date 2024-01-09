@@ -40,26 +40,26 @@
 					<div class="col-sm-6"
 						style="max-width: 32rem; display: inline-block; width: 32rem;"
 						th:each="book, iStat : ${bookPage.content}">
-						<div class="card text-white bg-dark"
+						<div class="card text-white bg-white"
 							style="width: 32rem; margin-bottom: 50px">
 							<img class="card-img-top" th:src="${book.imageUrl}"
 								 style="max-width: 1000px; height: 232px; margin: 3px 0px; width: 510px;"
 								 alt="Book image">
 							<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
 							<div class="card-body">
-								<h5 class="card-title" th:text="${book.name}"></h5>
+								<h5 class="card-title text-dark bg-white" th:text="${book.name}"></h5>
 								<p class="card-text" th:text="${book.authors}"></p>
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item text-white bg-dark"
+								<li class="list-group-item text-dark bg-white"
 									th:text="${book.publisher}"></li>
-								<li class="list-group-item text-white bg-dark"
+								<li class="list-group-item text-dark bg-white"
 									th:text="${book.publishedOn}"></li>
-								<li class="list-group-item text-white bg-dark"
+								<li class="list-group-item text-dark bg-white"
 									th:text="${book.isbn}"></li>
 							</ul>
 							<div class="card-footer" style="display: inline">
-								<i class="font-weight-bold align-middle"
+								<i class="font-weight-bold align-middle text-dark bg-white"
 									th:text="${book.price} + ' ' + '$'"></i>
 								<form class="form-inline" style="float: right" action="#"
 									th:action="@{/cart/add/{id}(id=${book.id})}" method="get">
@@ -85,5 +85,8 @@
 		</div>
 	</div>
 
+	<footer style="background-color: #f8f9fa; color: #212529; text-align: center; padding: 10px;">
+		<p>Copyright &copy; 2024 abraham</p>
+	</footer>
 </body>
 </html>
