@@ -51,6 +51,8 @@ public class Book {
     @NotNull(message = "{book.date.notNull}")
     private LocalDate publishedOn;
 
+    @Column(name = "image_url")
+    private String imageUrl;
 
     public Book(long l, String theLordeOfTheRings, BigDecimal bigDecimal, String s, String s1, String s2, LocalDate now) {
     }

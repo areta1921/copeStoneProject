@@ -33,11 +33,7 @@ public class BookController {
         return page(null, model, page, size);
     }
 
-    @GetMapping("/home")
-    public String home(Model model) {
-        model.addAttribute("name", "User");
-        return "home";
-    }
+
     @GetMapping("/search")
     public String searchBooks(@RequestParam("term") String term, Model model,
                               @RequestParam("page") Optional<Integer> page, @RequestParam("size") Optional<Integer> size) {

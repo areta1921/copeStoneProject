@@ -1,8 +1,12 @@
 package com.bookstore.controller;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import com.bookstore.database.entity.Book;
+import com.bookstore.database.entity.Customer;
+import com.bookstore.database.entity.CustomerBooks;
+import com.bookstore.service.BillingService;
+import org.junit.jupiter.api.Test;
+import org.springframework.ui.Model;
+import org.springframework.validation.support.BindingAwareModelMap;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -10,14 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.bookstore.service.BillingService;
-import org.junit.jupiter.api.Test;
-import org.springframework.ui.Model;
-import org.springframework.validation.support.BindingAwareModelMap;
-
-import com.bookstore.database.entity.Book;
-import com.bookstore.database.entity.Customer;
-import com.bookstore.database.entity.CustomerBooks;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 class OrderControllerTest {
 

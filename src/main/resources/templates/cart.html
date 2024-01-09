@@ -50,6 +50,10 @@
 							style="width: 32rem; margin-bottom: 50px">
 							<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
 							<div class="card-body">
+								<img class="card-img-top" th:src="${book.imageUrl}"
+									 style="max-width: 1000px; height: 232px; margin: 4px 0px; width: 470px;"
+									 alt="Book image">
+
 								<h5 class="card-title" th:text="${book.name}"></h5>
 								<p class="card-text" th:text="${book.authors}"></p>
 							</div>

@@ -1,6 +1,7 @@
 body {
 	background-color: #181818;
 	color: white;
+	padding-top: 70px;
 }
 
 #main-content {
@@ -27,4 +28,8 @@ body {
 
 .form-control {
 	color: black;
+}
+
+.navbar{
+position: fixed;
 }

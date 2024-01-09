@@ -6,6 +6,19 @@
 	<nav th:replace="layout :: header"></nav>
 
 
+	<div class="container" id="main-content">
+		<div class="row">
+			<div class="col-6 no-padding">
+				<form class="form-inline" action="#" th:action="@{/search}"
+					  method="get">
+					<input class="form-control mr-sm-2" type="search" name="term"
+						   placeholder="Search by name ..."/>
+					<button class="btn btn-primary" type="submit">
+						<i class="fa fa-search"></i> Search
+					</button>
+				</form>
+			</div>
+		</div>
 		<div class="row mt-4">
 			<div th:if="${successMessage}"
 				class="col-12 alert alert-success alert-dismissible fade show"
@@ -29,6 +42,9 @@
 						th:each="book, iStat : ${bookPage.content}">
 						<div class="card text-white bg-dark"
 							style="width: 32rem; margin-bottom: 50px">
+							<img class="card-img-top" th:src="${book.imageUrl}"
+								 style="max-width: 1000px; height: 232px; margin: 3px 0px; width: 510px;"
+								 alt="Book image">
 							<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
 							<div class="card-body">
 								<h5 class="card-title" th:text="${book.name}"></h5>
